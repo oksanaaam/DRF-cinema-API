@@ -60,3 +60,12 @@ Get an access token from the following URL http://localhost:8000/api/user/token/
 API documentation is technical content that describes the movie API in detail:
 
 Swagger UI: http://localhost:8000/api/doc/swagger/
+
+Screenshots from swagger showing the available endpoints:
+![img.png](img for README/img.png)
+
+Filtering movies by title, genre and actors
+![img_1.png](img for README/img_1.png)
+
+Set count orders, which will be shown on one page
+![img_2.png](img for README/img_2.png)
