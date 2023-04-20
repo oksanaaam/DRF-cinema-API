@@ -105,7 +105,7 @@ class MovieViewSet(
         if self.action == "upload_image":
             return MovieImageSerializer
 
-        return MovieSerializer
+        return self.serializer_class
 
     @action(
         methods=["POST"],
@@ -149,7 +149,7 @@ class MovieViewSet(
 
 class MovieSessionViewSet(viewsets.ModelViewSet):
     queryset = (
-        MovieSession.objects.all()
+        MovieSession.objects
         .select_related("movie", "cinema_hall")
         .annotate(
             tickets_available=(
@@ -183,7 +183,7 @@ class MovieSessionViewSet(viewsets.ModelViewSet):
         if self.action == "retrieve":
             return MovieSessionDetailSerializer
 
-        return MovieSessionSerializer
+        return self.serializer_class
 
     @extend_schema(
         parameters=[
@@ -230,7 +230,7 @@ class OrderViewSet(
         if self.action == "list":
             return OrderListSerializer
 
-        return OrderSerializer
+        return self.serializer_class
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
