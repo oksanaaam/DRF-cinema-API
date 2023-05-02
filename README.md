@@ -66,7 +66,8 @@ API documentation is technical content that describes the movie API in detail:
 Swagger UI: http://localhost:8000/api/doc/swagger/
 
 Screenshots from swagger showing the available endpoints:
-![img.png](img for README/img.png)
+
+![alt text](img for README/img.png)
 
 Filtering movies by title, genre and actors
 ![img_1.png](img for README/img_1.png)
