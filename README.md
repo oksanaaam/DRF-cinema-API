@@ -17,6 +17,10 @@ pip install -r requirements.txt
 Set the required environment variables in .env.sample file:
 
 ```
+SECRET_KEY=<your SECRET_KEY>
+ALLOWED_HOSTS=<your ALLOWED_HOSTS>
+DEBUG = <your debug>
+
 POSTGRES_HOST=<your db hostname>
 POSTGRES_DB=<your db name>
 POSTGRES_USER=<your user name>
