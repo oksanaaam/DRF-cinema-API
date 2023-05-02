@@ -67,10 +67,10 @@ Swagger UI: http://localhost:8000/api/doc/swagger/
 
 Screenshots from swagger showing the available endpoints:
 
-![img](img for README/img.png)
+![img](img/img.png)
 
 Filtering movies by title, genre and actors
-![img](img for README/img_1.png)
+![img](img/img_1.png)
 
 Set count orders, which will be shown on one page
-![img](img for README/img_2.png)
+![img](img/img_2.png)
